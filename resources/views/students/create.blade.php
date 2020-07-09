@@ -12,7 +12,8 @@
                     <a class="btn btn-primary" href="{{route('students.index')}}">Torna alla home</a>
                 </div>
             </div>
-            <form class="" action="{{route('students.store')}}" method="post">
+            <form action="{{route('students.store')}}" method="post">
+                @csrf
                 <div class="form-group">
                     <label for="nome">Nome</label>
                     <input type="text" name="name" class="form-control" id="nome">
