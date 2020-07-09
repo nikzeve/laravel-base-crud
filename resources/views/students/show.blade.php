@@ -7,7 +7,11 @@
     <div class="container">
         <div class="row">
             <div class="col-12">
-                <h1>Scheda studente</h1>
+                <div class="d-flex justify-content-between align-items-center">
+                    <h1>Scheda studente</h1>
+                    <a class="btn btn-primary" href="{{route('students.index')}}">Torna alla home</a>
+                </div>
+
                 <table class="table">
                     <thead>
                         <tr>
@@ -21,11 +25,11 @@
                     <tbody>
 
                             <tr>
-                                <td>{{$studente->id}}</td>
-                                <td>{{$studente->name}}</td>
-                                <td>{{$studente->surname}}</td>
-                                <td>{{$studente->registration_number}}</td>
-                                <td>{{$studente->email}}</td>
+                                <td>{{$student->id}}</td>
+                                <td>{{$student->name}}</td>
+                                <td>{{$student->surname}}</td>
+                                <td>{{$student->registration_number}}</td>
+                                <td>{{$student->email}}</td>
                             </tr>
 
                     </tbody>
