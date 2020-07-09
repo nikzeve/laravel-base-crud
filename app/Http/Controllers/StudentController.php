@@ -15,7 +15,7 @@ class StudentController extends Controller
     public function index()
     {
         $studenti = Student::all();
-        dd($studenti);
+        return view('students.lista_studenti', compact('studenti'));
     }
 
     /**
