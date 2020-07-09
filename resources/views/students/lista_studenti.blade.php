@@ -14,6 +14,7 @@
                             <th>ID</th>
                             <th>NOME</th>
                             <th>COGNOME</th>
+                            <th>OPZIONI</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -22,6 +23,9 @@
                                 <td>{{$studente->id}}</td>
                                 <td>{{$studente->name}}</td>
                                 <td>{{$studente->surname}}</td>
+                                <td>
+                                    <a class="btn btn-info"href="{{route('students.show', ['student' => $studente->id])}}">Informazioni</a>
+                                </td>
                             </tr>
                         @endforeach
                     </tbody>
